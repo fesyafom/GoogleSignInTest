@@ -1,0 +1,34 @@
+.user {
+    float: right;
+    display: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.user.open {
+    display: block;
+}
+
+.user__logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+.user__name {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.login {
+    float: right;
+    display: none;
+}
+
+.login.open {
+    display: block;
+}
