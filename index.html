@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-signin-client_id" content="982596103606-3lfc4uhonegobtjvjsgvnvij5j27aml2.apps.googleusercontent.com">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="style.css"><link>
 </head>
 <body>
-    <div id="user" class="user" onclick="signOut();">
+    <button id="loginBtn" class="login open" type="button" onclick="login();">log in</button>
+
+    <div id="user" class="user" onclick="logout();">
         <img class="user__logo" src="" alt="logo" />
         <p class="user__name"></p>
     </div>
 
-    <div id="loginBtn" class="login g-signin2 open" data-onsuccess="onSignIn"></div>
-
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/api.js?onload=start" async defer></script>
     <script src="main.js"></script>
 </body>
 </html>
